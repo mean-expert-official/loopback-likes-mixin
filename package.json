@@ -1,0 +1,49 @@
+{
+  "name": "loopback-likes-mixin",
+  "version": "1.0.0",
+  "author": "Jonathan Casarrubias <http://github.com/jonathan-casarrubias>",
+  "description": "A mixin to provide like and dislike functionallity for Loopback Models",
+  "main": "src/index.js",
+  "scripts": {
+    "preversion": "npm test",
+    "pretest": "eslint ./src/*.js && gulp",
+    "test": "_mocha --compilers js:babel-core/register",
+    "watch": "gulp",
+    "outdated": "npm outdated --depth=0"
+  },
+  "keywords": [
+    "loopback",
+    "strongloop",
+    "mixin",
+    "likes",
+    "ibm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathan-casarrubias/loopback-likes-mixin.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^6.3.13",
+    "async": "^2.0.0-rc.2",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-istanbul": "^0.5.8",
+    "babel-plugin-add-module-exports": "^0.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.1.18",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "chai": "^3.4.1",
+    "eslint": "^1.9.0",
+    "eslint-config-airbnb": "^1.0.0",
+    "eslint-plugin-react": "^3.9.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "loopback": "2.x",
+    "loopback-boot": "2.x",
+    "mocha": "^2.3.4"
+  }
+}
