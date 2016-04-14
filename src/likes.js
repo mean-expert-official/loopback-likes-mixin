@@ -34,17 +34,17 @@ module.exports = (Model, ctx) => {
         // Handle Errors
         if (err) {
           if (typeof finish === 'function') finish(err);
-          return resolve(err);
+          return reject(err);
         }
         if (!results.modelInstance) {
           err = new Error('No Model instance of ' + Model.definition.name + ' with id ' + id + ' was found');
           if (typeof finish === 'function') finish(err);
-          return resolve(err);
+          return reject(err);
         }
-        if (!results.modelInstance) {
+        if (!results.userInstance) {
           err = new Error('No Model instance of ' + ctx.userModel + ' with id ' + userId + ' was found');
           if (typeof finish === 'function') finish(err);
-          return resolve(err);
+          return reject(err);
         }
         // Get index of user like in array, if any
         const index = results.modelInstance[ctx.likes].users.indexOf(userId);
