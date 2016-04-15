@@ -58,8 +58,11 @@ module.exports = (Model, ctx) => {
         results.modelInstance[ctx.likes].total = results.modelInstance[ctx.likes].users.length;
         results.modelInstance.save((saveerr, result) => {
           if (saveerr) reject(saveerr);
-          if (typeof finish === 'function') finish(err, result);
-          resolve(result);
+          if (typeof finish === 'function') {
+            finish(err, result);
+          } else {
+            resolve(result);
+          }
         });
       });
     });

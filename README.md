@@ -45,10 +45,10 @@ The following is the default configuration
 "mixins": {
     "Likes": [
         {
-          method: 'like',
-          endpoint: '/:id/like',
-          likes: 'likes',
-          userModel: 'User'
+          "method": "like",
+          "endpoint": "/:id/like",
+          "likes": "likes",
+          "userModel": "User"
         }
     ]
 }
@@ -74,8 +74,6 @@ The following options are the optional configurations for the mixin to work.
 | description   | String      | No  | Any               | Loopback Explorer Description
 | likes         | String      | No  | Any               | Model property name with Object type
 | userModel     | String      | No  | User based models | User, Account, Admin.. e
-| nested        | String      | No | Model nested property | locations iff Organization.locations
-| count         | Object      | Yes | [on \| by \| as \| avg] | SEE COUNT OPTIONS
 
 
 LICENSE

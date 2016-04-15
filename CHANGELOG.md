@@ -5,6 +5,8 @@ Loopback Stats Mixin - CHANGELOG
 
 The **loopback-likes-mixin** module change .
 
+- **Version 1.0.2**.- 
+    - Fixed promise issue on after remote hook
 - **Version 1.0.1**.- 
     - Fixed reject issues
 - **Version 1.0.0**.- 
