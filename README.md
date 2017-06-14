@@ -78,4 +78,4 @@ The following options are the optional configurations for the mixin to work.
 
 LICENSE
 =============
-[MTI](LICENSE.md)
+[MIT](LICENSE.md)
